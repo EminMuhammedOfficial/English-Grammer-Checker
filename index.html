@@ -83,9 +83,9 @@
 
             try {
                 const result = await puter.ai.chat(prompt);
-                document.getElementById('outputText').innerText = result.message || result;
+                document.getElementById('outputText').innerText = result || result;
             } catch (error) {
-                document.getElementById('outputText').innerText = 'Error: ' + error.message;
+                document.getElementById('outputText').innerText = 'Error: ' + error;
             }
         }
     </script>
